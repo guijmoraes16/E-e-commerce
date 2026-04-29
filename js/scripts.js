@@ -2,7 +2,7 @@ async function carregarProdutios() {
     const container = document.getElementById("produtos");
     
     try {
-        const reposta = await fetch("https;//dummyjson.com/products");
+        const reposta = await fetch("https://dummyjson.com/products");
         const dados = await reposta.json();
         const produtos = dados.products;
 
@@ -22,7 +22,7 @@ async function carregarProdutios() {
                   <!-- Product name-->
                   <h5 class="fw-bolder">${produto.title}</h5>
                   <!-- Product price-->
-                    R$ ${produto.price}
+                    R$ ${produto.price.toFixed(2)}
                 </div>
               </div>
               <!-- Product actions-->
@@ -36,10 +36,13 @@ async function carregarProdutios() {
             </div>
           </div>
             
-            `
+            `;
+            container.innerHTML += card;
         });
     } catch (error) {
         console.error("Erro ao carregar os produtos:", error);
        container.innerHTML = "<p>Erro ao carregar os produtos. Por favor, tente novamente mais tarde.</p>";
     }
 }
+
+carregarProdutios();

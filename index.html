@@ -1,69 +1,225 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Shop Homepage - Start Bootstrap Template</title>
+        <title>Loja de Peças de PC - Palmas TO</title>
+
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
+
+        <!-- CSS -->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
+
     <body>
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#!">Start Bootstrap</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <a class="navbar-brand" href="#">Web Tek Hardware</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#!">All Products</a></li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="#!">Popular Items</a></li>
-                                <li><a class="dropdown-item" href="#!">New Arrivals</a></li>
-                            </ul>
-                        </li>
+                    <ul class="navbar-nav me-auto ms-lg-4">
+                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
                     </ul>
-                    <form class="d-flex">
-                        <button class="btn btn-outline-dark" type="submit">
-                            <i class="bi-cart-fill me-1"></i>
-                            Cart
-                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
-                        </button>
-                    </form>
+
+                    <button class="btn btn-outline-light">
+                        <i class="bi-cart-fill me-1"></i>
+                        Carrinho
+                        <span class="badge bg-light text-dark ms-1 rounded-pill">5</span>
+                    </button>
                 </div>
             </div>
         </nav>
+
         <!-- Header-->
-        <header class="bg-dark py-5">
-            <div class="container px-4 px-lg-5 my-5">
-                <div id="produtos"
-                class="row gx-4  gx-lg-5 row-cols-2 row-cpls-md-3 row-cols-x1-4 justify-content-center"
-                >
-            <!-- Section-->
+        <header class="py-5 text-white" style="background: linear-gradient(90deg, #0d1117, #1f2937);">
+            <div class="container px-4 px-lg-5 text-center">
+                <h1 class="display-4 fw-bolder">
+                    Peças Gamer em Palmas - TO
+                </h1>
+
+                <p class="lead text-white-50 mb-4">
+                    SSD, Placas de Vídeo, Memórias e muito mais com os melhores preços
+                </p>
+
+                <a href="#produtos" class="btn btn-primary btn-lg">
+                    Ver Produtos
+                </a>
             </div>
+        </header>
+
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 mt-5">
+                <div id="produtos" class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+
                   
+                    <div class="col mb-5">
+                        <div class="card h-100">
+
+                            <div class="badge bg-danger position-absolute" style="top: 10px; right: 10px">
+                                Promoção
+                            </div>
+
+                            <img class="card-img-top" src="https://tse2.mm.bing.net/th/id/OIP.VNpbBC3JdVffXtIWYADCAAHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" />
+
+                            <div class="card-body text-center">
+                                <h5 class="fw-bolder">SSD 480GB Kingston</h5>
+
+                                <div class="text-warning mb-2">★★★★★</div>
+
+                                <span class="text-muted text-decoration-line-through">R$ 350,00</span><br>
+                                <strong>R$ 250,00</strong>
+                            </div>
+
+                            <div class="card-footer text-center bg-transparent">
+                                <button class="btn btn-outline-dark">
+                                    Adicionar ao carrinho
+                                </button>
+                            </div>
+
                         </div>
                     </div>
-                </div>
-            </div>
+
+                    <div class="col mb-5">
+                        <div class="card h-100">
+
+                            <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmP628vCnoBf9HQezIfn3IpZ1eO3pvzm0Lvw&s" />
+                            
+                            <div class="card-body text-center">
+                                <h5 class="fw-bolder">Memória RAM 16GB DDR4</h5>
+
+                                <div class="text-warning mb-2">★★★★☆</div>
+
+                                <strong>R$ 650,00</strong>
+                            </div>
+
+                            <div class="card-footer text-center bg-transparent">
+                                <button class="btn btn-outline-dark">
+                                    Adicionar ao carrinho
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+          
+                    <div class="col mb-5">
+                        <div class="card h-100">
+
+                            <div class="badge bg-success position-absolute" style="top: 10px; right: 10px">
+                                Novo
+                            </div>
+
+                            <img class="card-img-top" src="https://images.kabum.com.br/produtos/fotos/397581/placa-de-video-rtx-4080-gaming-x-trio-msi-nvidia-geforce-16-gb-gddr6x-dlss-ray-tracing-geforce-rtx-4080-16gb-gaming-x-trio_1668088014_gg.jpg" />
+
+                            <div class="card-body text-center">
+                                <h5 class="fw-bolder">Placa de Vídeo RTX 4080</h5>
+
+                                <div class="text-warning mb-2">★★★★★</div>
+
+                                <strong><span class="text-muted text-decoration-line-through">R$ 8.000,00</span></strong><br>
+                                <strong>R$ 5.000,00</strong>
+                            </div>
+
+                            <div class="card-footer text-center bg-transparent">
+                                <button class="btn btn-outline-dark">
+                                    Adicionar ao carrinho
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col mb-5">
+                        <div class="card h-100">
+
+                            <img class="card-img-top" src="https://images.kabum.com.br/produtos/fotos/571928/processador-amd-ryzen-7-8700f-4-1-ghz-5-0-ghz-max-turbo-cache-24mb-8-nucleos-16-threads-am5-100-100001590box_1715706804_gg.jpg" />
+
+                            <div class="card-body text-center">
+                                <h5 class="fw-bolder">AMD Processador Ryzen 7 8700F 4.1GHz AM5 100100001590BOXi</h5>
+
+                                <div class="text-warning mb-2">★★★★★</div>
+
+                                <strong>R$ 1.299,99</strong>
+                            </div>
+
+                            <div class="card-footer text-center bg-transparent">
+                                <button class="btn btn-outline-dark">
+                                    Adicionar ao carrinho
+                                </button>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+
+                     <div class="col mb-5">
+                        <div class="card h-100">
+
+                            <img class="card-img-top" src="https://patoloco.com.br/arquivos/produtos/imagens_adicionais/6191cf91b650f5413579c1cb1b959cdc8f1565ca.jpeg" />
+                            
+                            <div class="card-body text-center">
+                                <h5 class="fw-bolder">Placa Mãe MSI PRO B650M-P, Chipset B650, AMD AM5, M-ATX, DDR5
+</h5>
+
+                                <div class="text-warning mb-2">★★★★☆</div>
+
+                                <strong>R$ 899,99</strong>
+                            </div>
+
+                            <div class="card-footer text-center bg-transparent">
+                                <button class="btn btn-outline-dark">
+                                    Adicionar ao carrinho
+                                </button>
+                            </div>
+                       </div>
+                
+                      </div>
+                        <div class="col mb-5">
+                        <div class="card h-100">
+
+                            <div class="badge bg-success position-absolute" style="top: 10px; right: 10px">
+                                Novo
+                            </div>
+
+                            <img class="card-img-top" src="https://m.media-amazon.com/images/I/61aIuJu0M0L._AC_SX679_.jpg" />
+
+                            <div class="card-body text-center">
+                                <h5 class="fw-bolder">Monitor Gamer LG UltraGear 24” 24GS60F-B IPS Full HD 180Hz 1ms (GtG) NVIDIA® G-SYNC® AMD FreeSync™ HDR10 sRGB 99% HDMI DisplayPort</h5>
+
+                                <div class="text-warning mb-2">★★★★★</div>
+
+                                <strong><span class="text-muted text-decoration-line-through">R$ 920,00</span></strong><br>
+                                <strong>R$ 739,90</strong>
+                            </div>
+
+                            <div class="card-footer text-center bg-transparent">
+                                <button class="btn btn-outline-dark">
+                                    Adicionar ao carrinho
+                                </button>
+                            </div>
         </section>
+
         <!-- Footer-->
         <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
+            <div class="container">
+                <p class="m-0 text-center text-white">
+                    © Web Tek Hardware 2026
+                </p>
+            </div>
         </footer>
-        <!-- Bootstrap core JS-->
+
+        <!-- JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        <!-- <script src="js/scripts.js"></script> -->
     </body>
 </html>
